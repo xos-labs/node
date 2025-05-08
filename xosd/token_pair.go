@@ -1,0 +1,17 @@
+package xosd
+
+import erc20types "github.com/xos-labs/node/x/erc20/types"
+
+// WTOKENContractMainnet is the WTOKEN contract address for mainnet
+const WTOKENContractMainnet = "0xD4949664cD82660AaE99bEdc034a0deA8A0bd517"
+
+// ExampleTokenPairs creates a slice of token pairs, that contains a pair for the native denom of the example chain
+// implementation.
+var ExampleTokenPairs = []erc20types.TokenPair{
+	{
+		Erc20Address:  WTOKENContractMainnet,
+		Denom:         XOSChainDenom,
+		Enabled:       true,
+		ContractOwner: erc20types.OWNER_MODULE,
+	},
+}

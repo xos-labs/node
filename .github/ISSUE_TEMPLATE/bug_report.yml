@@ -1,0 +1,57 @@
+name: "🐞 Bug Report"
+description: "Report a reproducible bug"
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a bug! Please fill out the form below to help us resolve the issue quickly.
+  - type: textarea
+    attributes:
+      label: Bug Description
+      description: "A clear and concise description of the bug"
+      placeholder: "When I... the application..."
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Steps to reproduce
+      description: "Provide a detailed list of steps to reproduce the bug"
+      placeholder: |
+        1. Go to '...'
+        2. Click on '....'
+        3. Scroll down to '....'
+        4. See error
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Expected behavior
+      description: "What did you expect to happen?"
+      placeholder: "I expected..."
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Actual behavior
+      description: "What actually happened?"
+      placeholder: "Instead, what happened was..."
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Environment
+      description: "Please provide information about your environment"
+      placeholder: |
+        - OS: [e.g. Windows, macOS, Linux]
+        - Browser/Runtime: [e.g. Chrome, Safari, Node.js]
+        - Version: [e.g. 22]
+    validations:
+      required: false
+  - type: textarea
+    attributes:
+      label: Additional Context
+      description: "Add any other context, logs, or screenshots about the bug here"
+      placeholder: "Any other relevant information..."
+    validations:
+      required: false

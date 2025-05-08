@@ -1,0 +1,22 @@
+{
+  "name": "cosmos-evm-contracts",
+  "version": "2.0.0",
+  "description": "A collection of smart contracts used in the development of the Cosmos EVM blockchain.",
+  "devDependencies": {
+    "@openzeppelin/contracts": "^4.9.6",
+    "hardhat": "^2.22.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xos-labs/node.git"
+  },
+  "author": "Evmos Core Team",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xos-labs/node/issues"
+  },
+  "homepage": "https://github.com/xos-labs/node#readme"
+}

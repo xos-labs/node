@@ -1,0 +1,42 @@
+name: "📃 Documentation Issue"
+description: "Report documentation problems or suggest improvements"
+title: "[docs] "
+labels: ["documentation"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for helping us improve our documentation!
+  - type: dropdown
+    attributes:
+      label: Issue Type
+      description: "What type of documentation issue are you reporting?"
+      options:
+        - Error or Incorrect Information
+        - Missing Information
+        - Unclear Explanation
+        - Improvement Suggestion
+        - Other
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: Documentation Location
+      description: "Please provide a link to or path of the documentation you're referencing"
+      placeholder: "URL or file path"
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Description
+      description: "Please describe the issue or improvement in detail"
+      placeholder: "The documentation should..."
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Suggested Changes
+      description: "If possible, suggest how the documentation could be improved"
+      placeholder: "Consider changing..."
+    validations:
+      required: false

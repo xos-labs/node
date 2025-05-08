@@ -1,0 +1,22 @@
+name: "❓ Questions and Discussions"
+description: "Ask questions or start discussions about this project"
+labels: ["question"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for your interest in this project! We value your questions and discussions.
+  - type: textarea
+    attributes:
+      label: Question or Discussion Topic
+      description: "Please describe your question or topic for discussion in detail"
+      placeholder: "What would you like to ask or discuss?"
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Additional Context
+      description: "Add any other context, screenshots, or references that might help us understand"
+      placeholder: "Any additional information that might help"
+    validations:
+      required: false
