@@ -215,6 +215,8 @@ func InitAppConfig(denom string) (string, interface{}) {
 		TLS:     *cosmosevmserverconfig.DefaultTLSConfig(),
 	}
 
+	customAppConfig.JSONRPC.Enable = true
+
 	customAppTemplate := serverconfig.DefaultConfigTemplate +
 		cosmosevmserverconfig.DefaultEVMConfigTemplate
 
